@@ -1,6 +1,7 @@
 @media screen and (min-width: 480px){
     .App {
         position: relative;
+        font-family: sans-serif;
     }
     .AdDesigner{
         margin-left: 20px;
@@ -9,8 +10,12 @@
     }
     .Votes {
         position: absolute;
-        top: 40px;
+        top: 90px;
         width: 50%;
         right: 0;
+    }
+    .Ad {
+       display: inline-block;
+       
     }
 }

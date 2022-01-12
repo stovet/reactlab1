@@ -1,10 +1,20 @@
 import React from 'react';
 
-function Ad({flavor, fontSize, darkTheme}: {flavor: string, fontSize: number, darkTheme: boolean}){
+export interface AdProps {
+    flavor: string;
+    fontSize: number;
+    darkTheme: boolean;
+}
+
+function Ad({flavor, fontSize, darkTheme}: AdProps){
+    let theme = "";
+    if(darkTheme){
+        theme = "darkTheme";
+    }
     return(
         <div className="Ad">
-            <div className={"voteFor " + darkTheme}>
-                <p>Vote For</p> <span>{flavor}</span>
+            <div className={"voteFor " + theme}>
+                <p>Vote For</p> <span style={{fontSize:fontSize}}>{flavor}</span>
             </div>
         </div>
     )

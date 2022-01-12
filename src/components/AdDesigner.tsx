@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
-import './AdDesigner.css'
+import './AdDesigner.css';
+import Ad from './Ad';
 
 function AdDesigner(){
     const [flavor, setFlavor] = useState("Chocolate");
     const [fontSize, setFontSize] = useState(15);
     const [theme, setTheme] = useState(false);
-    let darkTheme = "";
+    let isDarkTheme = ""; 
     let disabled1 = "";
     let disabled2 = "";
     let disableChoc = "";
@@ -19,7 +20,7 @@ function AdDesigner(){
         disableStraw = "disableStraw"
     }
     if(theme){
-        darkTheme = "darkTheme";
+        isDarkTheme = "darkTheme";
         disabled2 = "disabled1";
     } else{
         disabled1= "disabled2";
@@ -27,9 +28,10 @@ function AdDesigner(){
     return (
         <div className="AdDesigner">
             <h1>Ad Designer</h1>
-            <div className={"voteFor " + darkTheme}>
+            {/* <div className={"voteFor " + darkTheme}>
                 <p>Vote For</p> <span style={{fontSize:fontSize}}>{flavor}</span>
-            </div>
+            </div> */}
+            <Ad flavor={flavor} fontSize={fontSize} darkTheme={theme}/>
             <h3>What to Support</h3>
             <button onClick={() => setFlavor("Chocolate")} className={disableChoc}>Chocolate</button>
             <button onClick={() => setFlavor("Vanilla")} className={disableVan}>Vanilla</button>

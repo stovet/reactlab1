@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Header user="Steve"/>
       <Ad flavor="Chocolate" fontSize={20} darkTheme={true}/>
-      <Ad flavor="Vanilla" fontSize={18} darkTheme={false}/>
+      <Ad flavor="Vanilla" fontSize={12} darkTheme={false}/>
       <Ad flavor="Strawberry" fontSize={25} darkTheme={false}/>
       <AdDesigner />
       <Votes />

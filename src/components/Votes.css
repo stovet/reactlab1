@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+h1 {
+    font-family: 'Caveat', cursive;
+    
+}
+
+.choc {
+    background-color:  #4f2c2c;
+    height: 15px;
+}
+.van {
+    background-color: #cbc0ac;
+    height: 15px;
+}
+.straw {
+    background-color: #de8c91;
+    height: 15px;
+}

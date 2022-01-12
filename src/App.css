@@ -1,11 +1,15 @@
 @media screen and (min-width: 480px){
+    .App {
+        position: relative;
+    }
     .AdDesigner{
         margin-left: 20px;
         display: inline-block;    
         width: 50%;
     }
     .Votes {
-        display: inline-block;
+        position: absolute;
+        top: 40px;
         width: 50%;
         right: 0;
     }

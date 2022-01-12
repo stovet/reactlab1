@@ -8,12 +8,15 @@ h1 {
 .choc {
     background-color:  #4f2c2c;
     height: 15px;
+    width: 0;
 }
 .van {
     background-color: #cbc0ac;
     height: 15px;
+    width: 0;
 }
 .straw {
     background-color: #de8c91;
     height: 15px;
+    width: 0;
 }

@@ -8,6 +8,16 @@ function AdDesigner(){
     let darkTheme = "";
     let disabled1 = "";
     let disabled2 = "";
+    let disableChoc = "";
+    let disableVan = "";
+    let disableStraw = "";
+    if(flavor === "Chocolate"){
+        disableChoc= "disableChoc"
+    } else if(flavor === "Vanilla"){
+        disableVan = "disableVan"
+    } else if(flavor === "Strawberry"){
+        disableStraw = "disableStraw"
+    }
     if(theme){
         darkTheme = "darkTheme";
         disabled2 = "disabled1";
@@ -21,9 +31,9 @@ function AdDesigner(){
                 <p>Vote For</p> <span>{flavor}</span>
             </div>
             <h3>What to Support</h3>
-            <button onClick={() => setFlavor("Chocolate")}>Chocolate</button>
-            <button onClick={() => setFlavor("Vanilla")}>Vanilla</button>
-            <button onClick={() => setFlavor("Strawberry")}>Strawberry</button>
+            <button onClick={() => setFlavor("Chocolate")} className={disableChoc}>Chocolate</button>
+            <button onClick={() => setFlavor("Vanilla")} className={disableVan}>Vanilla</button>
+            <button onClick={() => setFlavor("Strawberry")} className={disableStraw}>Strawberry</button>
             <h3>Color Theme</h3>
             
             

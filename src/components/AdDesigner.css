@@ -30,3 +30,15 @@ h1 {
     pointer-events: none;
     color: gray;
 }
+.disableChoc{
+    pointer-events: none;
+    color: gray;
+}
+.disableVan{
+    pointer-events: none;
+    color: gray;
+}
+.disableStraw{
+    pointer-events: none;
+    color: gray;
+}

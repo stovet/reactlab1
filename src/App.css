@@ -1,0 +1,13 @@
+@media screen and (min-width: 480px){
+    .AdDesigner{
+        margin-left: 20px;
+        display: inline-block;    
+        width: 50%;
+    }
+    .Votes {
+        display: inline-block;
+        width: 50%;
+        right: 0;
+    }
+
+}

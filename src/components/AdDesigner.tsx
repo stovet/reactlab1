@@ -28,7 +28,7 @@ function AdDesigner(){
         <div className="AdDesigner">
             <h1>Ad Designer</h1>
             <div className={"voteFor " + darkTheme}>
-                <p>Vote For</p> <span>{flavor}</span>
+                <p>Vote For</p> <span style={{fontSize:fontSize}}>{flavor}</span>
             </div>
             <h3>What to Support</h3>
             <button onClick={() => setFlavor("Chocolate")} className={disableChoc}>Chocolate</button>

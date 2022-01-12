@@ -37,6 +37,9 @@ button:active {
     background-color: #222;
     color: #fff;
 }
+.darkTheme span{
+    color: #fff;
+}
 
 .disabled1{
     pointer-events: none;

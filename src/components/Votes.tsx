@@ -22,19 +22,19 @@ function Votes(){
             {
                 chocolate === 0  ?
                     <p>Chocolate: {chocolate} </p>:
-                    <p>Chocolate: {chocolate} {parseFloat(chocolate / totalVotes * 100).toFixed(1)}%</p>
+                    <p>Chocolate: {chocolate} {parseFloat((chocolate / totalVotes * 100).toFixed(1))}%</p>
             }
             <div className="choc" style={{width: (chocolate / totalVotes) * 100}}></div>
             {
                 vanilla === 0 ?
                 <p>Vanilla: {vanilla} </p>:
-                <p>Vanilla: {vanilla} {parseFloat(vanilla / totalVotes * 100).toFixed(1)}%</p>
+                <p>Vanilla: {vanilla} {parseFloat((vanilla / totalVotes * 100).toFixed(1))}%</p>
             }
             <div className="van" style={{width: (vanilla / totalVotes) * 100}}></div>
             {
                 strawberry === 0 ?
                 <p>Strawberry: {strawberry}</p>:
-                <p>Strawberry: {strawberry} {parseFloat(strawberry / totalVotes * 100).toFixed(1)}%</p>
+                <p>Strawberry: {strawberry} {parseFloat((strawberry / totalVotes * 100).toFixed(1))}%</p>
             }
             <div className="straw" style={{width: (strawberry / totalVotes) * 100}}></div>
             <span>{noVotes}</span>

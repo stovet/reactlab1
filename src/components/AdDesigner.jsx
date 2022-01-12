@@ -10,6 +10,9 @@ function AdDesigner(){
     let disabled2 = "";
     if(theme){
         darkTheme = "darkTheme";
+        disabled2 = "disabled1";
+    } else{
+        disabled1= "disabled2";
     }
     return (
         <div className="AdDesigner">
@@ -24,8 +27,8 @@ function AdDesigner(){
             <h3>Color Theme</h3>
             
             
-            <button onClick={() => setTheme(false)} disabled1>Light</button> 
-            <button onClick={() => setTheme(true)} disabled2>Dark</button>
+            <button onClick={() => setTheme(false)} className={disabled1}>Light</button> 
+            <button onClick={() => setTheme(true)} className={disabled2}>Dark</button>
             
             <h3>Font Size</h3>
             <button onClick={() => setFontSize(fontSize - 1)}>Down</button>
